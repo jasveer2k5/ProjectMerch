@@ -1,0 +1,167 @@
+/* Reset and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header / Navbar */
+header {
+    background-color: #2c3e50;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+.navbar .logo {
+    font-size: 2rem;
+    color: #ecf0f1;
+}
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+.nav-links li {
+    margin: 0 20px;
+}
+.nav-links a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+.nav-links a:hover {
+    color: #3498db;
+}
+
+/* Container for Main Content */
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Main content */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+/* Vlog posts section */
+.vlog-posts {
+    flex: 3;
+    margin-right: 2rem;
+}
+.vlog-post {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+.vlog-post img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.vlog-post-content {
+    padding: 1rem;
+}
+.vlog-post h2 {
+    color: #2c3e50;
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+}
+.vlog-post p {
+    color: #7f8c8d;
+    margin-bottom: 1rem;
+}
+.vlog-post .btn {
+    background-color: #3498db;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+.vlog-post .btn:hover {
+    background-color: #2980b9;
+}
+
+/* Sidebar with Featured Products */
+.sidebar {
+    flex: 1;
+}
+.featured-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+.featured-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+}
+.featured-item-content {
+    padding: 1rem;
+}
+.featured-item h3 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+.featured-item p {
+    color: #7f8c8d;
+    margin-bottom: 1rem;
+}
+.featured-item .btn {
+    background-color: #3498db;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+.featured-item .btn:hover {
+    background-color: #2980b9;
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav-links {
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+    .vlog-posts, .sidebar {
+        flex: 1;
+        margin-right: 0;
+    }
+}
